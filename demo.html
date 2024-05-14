@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fruit Rates</title>
+<link rel="icon" type="image/png" href="2.png">
+<style>
+  body {
+    background:url(img7.jpg);
+    
+    
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: flex-start;
+    max-width: 1200px; /* Set maximum width */
+  }
+
+  .fruit {
+    position: relative; /* Position relative for absolute positioning of rate */
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid rgb(208, 193, 193);
+    width: calc(50% - 40px); /* Adjust width as needed */
+    max-width: 300px; /* Set maximum width for responsiveness */
+  }
+
+  .fruit img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin-right: 20px;
+  }
+
+  .fruit h2 {
+    font-size: 24px;
+    color: #333333;
+  }
+
+  /* Keyframes for animation */
+  @keyframes moveRightToLeft {
+    0% {
+      right: -2%; /* Start position */
+    }
+    100% {
+      right: 30%; /* End position */
+    }
+  }
+
+  /* Apply animation only to .rate within .fruit */
+   .rate {
+    font-size: 20px;
+    color: #cd156e;
+    margin-bottom: 20px;
+    position: absolute; /* Position absolute to move independently */
+    right: -100%; /* Initially positioned outside the container */
+    animation: moveRightToLeft 5s linear forwards; /* Animation */
+  }
+
+  /* Style for back button */
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgb(2, 9, 92);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color:rgb(1, 1, 2);
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Four fruits on one side -->
+    <div class="fruit">
+      <img src="apple.jpg" alt="Apple">
+      <div>
+        <h2>Apple</h2>
+        <div class="rate">100 RS per KG</div>
+      </div>
+    </div>
+    <div class="fruit">
+      <img src="bana.jpg" alt="Banana">
+      <div>
+        <h2>Banana</h2>
+        <div class="rate">60 RS per KG</div>
+      </div>
+    </div>
+    <div class="fruit">
+      <img src="or1.jpg" alt="Orange">
+      <div>
+        <h2>Orange</h2>
+        <div class="rate">70 RS per KG</div>
+      </div>
+    </div>
+    <div class="fruit">
+      <img src="grapes.jpg" alt="Grapes">
+      <div>
+        <h2>Grapes</h2>
+        <div class="rate">65 RS per KG</div>
+      </div>
+    </div>
+    <!-- Extra fruit div -->
+    <div class="fruit">
+      <img src="kiwi.jpg" alt="Peach">
+      <div>
+        <h2>Kiwi</h2>
+        <div class="rate">90 RS per KG</div>
+      </div>
+    </div>
+    <!-- Four fruits on the other side -->
+    <div class="fruit">
+      <img src="cherry.jpg" alt="Cherry">
+      <div>
+        <h2>Cherry</h2>
+        <div class="rate">120 RS per KG</div>
+      </div>
+    </div>
+    <div class="fruit">
+      <img src="strawberry.jpg" alt="Strawberry">
+      <div>
+        <h2>Strawberry</h2>
+        <div class="rate">150 RS per KG</div>
+      </div>
+    </div>
+    <div class="fruit">
+      <img src="mango.jpg" alt="Mango">
+      <div>
+        <h2>Mango</h2>
+        <div class="rate">80 RS per KG</div>
+      </div>
+    </div>
+    <div class="fruit">
+      <img src="watermelon.jpg" alt="Watermelon">
+      <div>
+        <h2>Watermelon</h2>
+        <div class="rate">40 RS per KG</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Back button -->
+  <button class="back-button" onclick="window.location.href = 'index.html';">Back</button>
+</body>
+</html>

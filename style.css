@@ -1,0 +1,48 @@
+body {
+    
+    background-image: url(img7.jpg);
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #263937;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10%;
+    }
+    
+    .smart{
+        font-size: 40px;
+        
+    
+    }
+    .card{
+    width: 500px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(233, 242, 241);
+    border-width: 10px;
+    border-color: rgb(11, 10, 10);
+    
+    color:rgb(11, 10, 2);
+    }
+    
+    button{
+    width: 412px;
+    background-color:rgb(2, 9, 92);
+    color: #f4f1ea;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    margin: 10PX;
+    transition: background-color 0.3s ease;
+    
+    }
+    button:hover {
+        background-color:rgb(1, 1, 2);
+    }
+    
